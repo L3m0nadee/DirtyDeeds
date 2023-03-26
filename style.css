@@ -1,0 +1,245 @@
+
+
+/* Heading animation for homepage */
+@keyframes slide-in {
+    0% { transform: translate(-100%); }
+    100% { transform: translate(0%); }
+}
+
+h1 {
+    text-align: center;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    font-size: 60px;
+    margin: 2px auto;
+    font-family: 'Creepster', cursive;
+}
+
+
+
+
+
+
+/* Paragraph animation for homepage */
+@keyframes slide-in {
+    0% { transform: translate(-100%); }
+    100% { transform: translate(0%); }
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    text-align: center;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    font-family: 'Creepster', cursive;
+}
+
+
+/* Start button */
+@keyframes side-in {
+    0% { transform: translate(-100%); }
+    100% { transform: translate(0%); }
+}
+
+
+
+/* Button Animation */
+.btn {
+    margin: auto;
+    font-size: large;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 1.8em 1.5em 1.5em 0;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: large;
+    text-align: center;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    font-family: 'Creepster', cursive;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px #ffffff;
+}
+
+
+
+.moving-text {
+    position: absolute;
+    left: -100px;
+    top: 350px;
+    animation: move-right 10s linear infinite;
+    font-family: 'Creepster', cursive;
+}
+
+@keyframes move-right {
+    0% { left: -100px; }
+    100% { left: calc(100% + 100px); }
+}
+
+
+
+.animation-text {
+    position: absolute;
+    right: -100px;
+    top:  400px;
+    animation: move-left 10s linear infinite;
+    font-family: 'Creepster', cursive;
+}
+
+@keyframes move-left {
+    0% { right: -100px; }
+      100% { right: calc(100% + 100px); }
+    }
+
+
+
+
+/* Hides hyperlink */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+ 
+
+
+
+ #popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+    background-color: rgb(83, 81, 83);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease-out;
+    transform: translateY(100%);
+ }
+
+ #popup.open {
+    transform: translateY(0);
+ }
+
+
+
+
+
+ .move-text {
+    position: absolute;
+    left: -100px;
+    top: 450px;
+    animation: move-right 10s linear infinite;
+    font-family: 'Creepster', cursive;
+}
+
+@keyframes move-right {
+    0% { left: -100px; }
+    100% { left: calc(100% + 100px); }
+}
+
+
+
+
+
+.mation-text {
+    position: absolute;
+    right: -100px;
+    top: 500px;
+    animation: move-left 10s linear infinite;
+    font-family: 'Creepster', cursive;
+}
+
+    @keyframes move-left {
+    0% { right: -100px; }
+      100% { right: calc(100% + 100px); }
+    }
+
+
+
+    #overlay {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 700px;
+        background-color: rgb(83, 81, 83);
+        padding: 20px;
+        border-top-left-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 1s ease-in-out;
+        transform: translateY(100%);
+    }
+    
+    #overlay.open {
+        transform: translateY(0);
+    }
+
+
+
+    #cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 500px;
+        background-color: rgb(83, 81, 81);
+        padding: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 1s ease-in-out;
+        transform: translateY(-100%);
+    }
+    
+    #cover.open {
+        transform: translateY(0);
+    }
+
+
+    #mask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 500px;
+        background-color: rgb(83, 81, 81);
+        padding: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 1s ease-in-out;
+        transform: translateY(-100%);
+    }
+    
+    #mask.open {
+        transform: translateY(0);
+    }
+
+
+    .box {
+        border: 2px solid rgb(29, 24, 95);
+        padding: 10px;
+        background-color: rgb(20, 18, 18);
+        width: 1000px;
+        height: 100px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+
+
+
